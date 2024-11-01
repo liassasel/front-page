@@ -1,4 +1,3 @@
-import { ChevronDown } from "lucide-react";
 import ExpandDown from '../../../public/svgs/Expand_down.svg';
 import User from '../../../public/svgs/user.svg'
 import Cart from '../../../public/svgs/cart.svg'

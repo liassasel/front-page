@@ -11,7 +11,6 @@ import FacebookIcon from   '../../../public/svgs/facebook.svg'
 import InstagramIcon  from   '../../../public/svgs/instagram.svg'
 import TwitterIcon from   '../../../public/svgs/twitter.svg'
 import FiveStars from    '../../../public/svgs/stars-5-1.svg'
-import ChicksGold from '../../../public/images/chiksgold.png'
 
 
 

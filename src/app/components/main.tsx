@@ -14,7 +14,7 @@ import Image from 'next/image';
 
 // Main Component
 export default function MainComponent() {
-  const [displayedProducts, setDisplayedProducts] = useState<Product[]>(
+  const [displayedProducts] = useState<Product[]>(
     products || []
   );
 
