@@ -3,7 +3,7 @@
 
 # Getting Started
 
- 1 Clone the repository:
+ 1 Clone the repository:https://github.com/liassasel/front-page.git
 
  2 Navigate to the project directory:
 
