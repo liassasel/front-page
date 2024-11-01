@@ -79,7 +79,7 @@ const Footer = () => (
             </ul>
           </div>
   
-          <div className="footer-section">
+          <div className="footer-sections">
             <FiveStars alt="Trustpilot Reviews" className="trust-pilot"  /><span className='trust-class'>Trustpilot Reviews</span>
           </div>
         </div>
