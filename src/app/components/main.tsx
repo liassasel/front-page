@@ -5,6 +5,9 @@ import ProductCard from "./product-card";
 import Header from "./header";
 import Footer from "../components/footer";
 import BackgroundWow from '../../../public/images/warcraft22.png'
+import GoldBag from '../../../public/svgs/tresada.svg'
+import Sword from '../../../public/svgs/sword.svg'
+import Feather from '../../../public/svgs/pluma.svg'
 
 import Image from 'next/image';
 
@@ -31,33 +34,45 @@ export default function MainComponent() {
         <Header />
 
       <main className="main">
-        <h1 className="title">Condimentum consectetur</h1>
+      <h1 className="title">Condimentum consectetur</h1>
 
-        <div className="controls">
-          <div className="search-container">
-            <button className="select-game">
-              Select a game <ChevronDown className="icon" />
-            </button>
-            <div className="search-box">
-              <Search className="search-icon" />
-              <input
-                type="text"
-                placeholder="Search"
-                className="search-input"
-              />
-            </div>
-          </div>
+      <div className="controls">
+  <div className="search-container">
+    <button className="select-game">
+      <span className="icon-container">
+        <Sword />
+      </span>
+      Select a game
+      <ChevronDown className="icon" />
+    </button>
+    <div className="search-box">
+      <Search className="search-icon" />
+      <input
+        type="text"
+        placeholder="Search"
+        className="search-input"
+      />
+    </div>
+  </div>
 
-          <div className="filters">
-            <button className="filter-btn">
-              Price <span className="badge">All</span>
-            </button>
-            <button className="filter-btn">
-              Sort by: Featured <ChevronDown className="icon" />
-            </button>
-          </div>
-        </div>
-
+  <div className="filters">
+    <button className="filter-btn">
+      <span className="icon-container">
+        <GoldBag />
+      </span>
+      <span className="filter-label">Price</span>
+      <span className="badge">All</span>
+    </button>
+    <button className="filter-btn">
+      <span className="icon-container">
+        <Feather />
+      </span>
+      <span className="filter-label">Item Type</span>
+      <ChevronDown className="icon" />
+      <span className="badge">All</span>
+    </button>
+  </div>
+</div>
         <div className="products-grid">
           {(displayedProducts || []).map((product) => (
             <ProductCard key={product.id} product={product} />
