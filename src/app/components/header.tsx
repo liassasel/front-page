@@ -1,10 +1,9 @@
-
-
 // Header Component
 const Header = () => (
   <header className="header">
     <div className="logo">
-      <img src="/placeholder.svg?height=40&width=120" alt="Chicks Gold" />
+      <img src="https://i.ibb.co/WK2zGnz/chiksgold.png" alt="Chicks Gold" />
+      <div className="nav-separator"></div>
     </div>
     <nav className="nav">
       <select className="nav-select">
@@ -30,7 +29,7 @@ const Header = () => (
       <select className="currency-select">
         <option>USD</option>
       </select>
-      <button className="cart-button">CART (0)</button>
+      <button className="cart-button">CART (5)</button>
       <button className="sign-in-button">SIGN IN</button>
     </div>
   </header>

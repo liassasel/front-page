@@ -5,8 +5,6 @@ import './marketplace.css'
 
 export default function Page() {
   return (
-    <div>
-      <MainComponent />
-    </div>
+    <MainComponent />
   )
 }

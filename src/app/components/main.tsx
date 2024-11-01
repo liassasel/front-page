@@ -4,6 +4,10 @@ import { Search, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 import ProductCard from "./product-card";
 import Header from "./header";
 import Footer from "../components/footer";
+import BackgroundWow from '../../../public/images/warcraft22.png'
+
+import Image from 'next/image';
+
 
 // Main Component
 export default function MainComponent() {
@@ -14,7 +18,14 @@ export default function MainComponent() {
   return (
     <div className="container">
       <div className="background-image">
-        <img src="/placeholder.svg?height=500&width=1920" alt="Background" />
+        <Image
+        src={BackgroundWow}
+        alt="Background"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        className="background-image"
+        />
       </div>
 
         <Header />
@@ -39,7 +50,7 @@ export default function MainComponent() {
 
           <div className="filters">
             <button className="filter-btn">
-              All <span className="badge">A1</span>
+              Price <span className="badge">All</span>
             </button>
             <button className="filter-btn">
               Sort by: Featured <ChevronDown className="icon" />
@@ -69,8 +80,8 @@ export default function MainComponent() {
         </div>
       </main>
 
-        <Footer />
 
+      <Footer />
     </div>
   );
 }

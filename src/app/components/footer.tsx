@@ -1,29 +1,54 @@
+import VisaIcon from '../../../public/svgs/iconvisa.svg'
+import  MastercardIcon from '../../../public/svgs/mastercardsvg.svg'
+import AmexIcon from  '../../../public/svgs/american.svg'
+import SkrillIcon from  '../../../public/svgs/skrill.svg'
+import BitcoinY from   '../../../public/svgs/yellow.svg'
+import BitcoinG from   '../../../public/svgs/green.svg'
+import EthereumIcon from   '../../../public/svgs/ethereum.svg'
+import  LitecoinIcon from   '../../../public/svgs/litecoin.svg'
+import DiscordIcon from '../../../public/svgs/discord.svg'
+import FacebookIcon from   '../../../public/svgs/facebook.svg'
+import InstagramIcon  from   '../../../public/svgs/instagram.svg'
+import TwitterIcon from   '../../../public/svgs/twitter.svg'
+import FiveStars from    '../../../public/svgs/stars-5-1.svg'
+import ChicksGold from '../../../public/images/chiksgold.png'
+
+
+
+
+
+
+
 // Footer Component
 const Footer = () => (
     <footer className="footer">
       <div className="footer-content">
         <div className="payment-methods">
-          <img src="/placeholder.svg?height=30&width=50" alt="Visa" className="payment-icon" />
-          <img src="/placeholder.svg?height=30&width=50" alt="Mastercard" className="payment-icon" />
-          <img src="/placeholder.svg?height=30&width=50" alt="American Express" className="payment-icon" />
-          <img src="/placeholder.svg?height=30&width=50" alt="Skrill" className="payment-icon" />
+        <VisaIcon className="payment-icon" />
+        <MastercardIcon className="payment-icon" />
+        <AmexIcon className="payment-icon" />
+        <SkrillIcon className="payment-icon" />
           <div className="crypto-icons">
-            <img src="/placeholder.svg?height=20&width=20" alt="Bitcoin" className="crypto-icon" />
-            <img src="/placeholder.svg?height=20&width=20" alt="Ethereum" className="crypto-icon" />
+            <BitcoinG className="crypto-icons" />
+            <EthereumIcon className="crypto-icons" />
+            <BitcoinY className="crypto-icons" />
+            <LitecoinIcon className="crypto-icons" />
             <span className="more-text">and 50+ more</span>
           </div>
         </div>
   
         <div className="social-links">
-          <a href="#" className="social-link facebook">Facebook</a>
-          <a href="#" className="social-link instagram">Instagram</a>
-          <a href="#" className="social-link twitter">Twitter</a>
-          <a href="#" className="social-link discord">Discord</a>
+        <a href="#" className="social-link facebook"><FacebookIcon /></a>
+          <a href="#" className="social-link instagram"><InstagramIcon /></a>
+          <a href="#" className="social-link twitter"><TwitterIcon /></a>
+          <a href="#" className="social-link discord"><DiscordIcon /></a>   
         </div>
+
+        <div className='footer-line' />
   
         <div className="footer-grid">
           <div className="footer-company">
-            <img src="/placeholder.svg?height=50&width=150" alt="Chicks Gold" className="footer-logo" />
+            <img src='https://i.ibb.co/WK2zGnz/chiksgold.png' alt="Chicks Gold" className="footer-logo" />
             <a href="mailto:support@chicksgold.com" className="footer-email">support@chicksgold.com</a>
           </div>
   
@@ -55,7 +80,7 @@ const Footer = () => (
           </div>
   
           <div className="footer-section">
-            <img src="/placeholder.svg?height=50&width=150" alt="Trustpilot Reviews" className="trustpilot" />
+            <FiveStars alt="Trustpilot Reviews" className="trust-pilot"  /><span className='trust-class'>Trustpilot Reviews</span>
           </div>
         </div>
   

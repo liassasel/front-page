@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { products, Product } from "../../app/data/protducts";
+import Image from 'next/image';
+import { Product } from "../../../src/app/data/protducts";
 
 // Product Card Component
 const ProductCard = ({ product }: { product: Product }) => {
@@ -47,7 +48,7 @@ const ProductCard = ({ product }: { product: Product }) => {
       {product.inStock && <span className="stock-status">IN STOCK</span>}
 
       <div className="product-image">
-        <img src={product.image} alt={product.name} />
+        <Image src={product.image} alt={product.name} width={150} height={150} />
       </div>
 
       <div className="product-info">
